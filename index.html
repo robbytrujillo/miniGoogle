@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Google Clone</title>
+
+    <link rel="icon" type="image/png" href="images/googlelogo.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <a href="https://mail.google.com/">Gmail</a>
+          <a href="https://images.google.com/">Images</a>
+
+          <div class="menu" aria-label="Menu">
+            <div class="circle"></div>
+          </div>
+
+          <button type="button" id="signInBtn">Sign In</button>
+        </nav>
+      </header>
+
+      <main>
+        <img
+          src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+          alt="Google Logo"
+          class="logo"
+        />
+
+        <form class="search-form" id="searchForm">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-bar"
+            placeholder="Search Google or type a URL"
+            autocomplete="off"
+            aria-label="Masukkan kata kunci pencarian"
+            required
+          />
+
+          <div class="buttons">
+            <button type="submit">Google Search</button>
+
+            <button type="button" id="luckyBtn">I'm Feeling Lucky</button>
+          </div>
+        </form>
+
+        <div id="results" class="results" aria-live="polite"></div>
+      </main>
+
+      <footer>
+        <div class="footer">
+          <span>Indonesia</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
