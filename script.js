@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Buka hasil pencarian di tab baru.
     window.open(searchUrl, "_blank", "noopener,noreferrer");
+    // window.open(searchUrl, "noopener,noreferrer");
   }
 
   // Google Search: klik tombol atau tekan Enter.
